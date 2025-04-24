@@ -13,6 +13,11 @@
     nix-index-database.url = "github:nix-community/nix-index-database";
     nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
 
+    nvix.url = "github:SolidHal/nvix";
+    solidnix.inputs.nvix.follows = "nvix";
+    solidnix.inputs.nixpkgs.follows = "nixpkgs";
+    solidnix.inputs.nix-index-database.follows = "nix-index-database";
+
   };
 
   outputs = { self, nixpkgs, nix-index-database, solidnix, ... }@inputs: {
