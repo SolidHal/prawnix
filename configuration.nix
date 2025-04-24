@@ -18,7 +18,7 @@ in
     (inputs.solidnix + /modules/applications/syncthing.nix)
   ];
 
-  networking.hostname = hostname;
+  networking.hostName = hostname;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
